@@ -14,7 +14,7 @@ public class SbcConfigClientDemoApplication {
     SpringApplication.run(SbcConfigClientDemoApplication.class, args);
   }
 
-  @Value("${a}")
+  @Value("${a:a}")
   String a;
 
   @GetMapping("")
